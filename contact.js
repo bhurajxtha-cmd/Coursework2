@@ -165,3 +165,16 @@
     });
   }
 })();
+
+
+
+
+
+(function () {
+  const params = new URLSearchParams(window.location.search);
+  const svc = params.get("service");
+  if (svc) {
+    const serviceInput = document.getElementById("service");
+    if (serviceInput) serviceInput.value = decodeURIComponent(svc);
+  }
+})();
