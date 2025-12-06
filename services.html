@@ -1,53 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Services — Soaltee Events</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <a class="logo" href="index.html">Soaltee Events</a>
-      <nav id="mainNav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html" aria-current="page">Services</a></li>
-          <li><a href="contact.html">Book / Contact</a></li>
-          <li><a href="admin.html">Admin</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Services — Soaltee Events</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="logo" href="index.html">Soaltee Events</a>
+        <nav id="mainNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html" aria-current="page">Services</a></li>
+            <li><a href="contact.html">Book / Contact</a></li>
+            <li><a href="admin.html">Admin</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <main class="container" id="main">
-    <h1>Our Services</h1>
+    <main class="container" id="main">
+      <h1>Our Services</h1>
 
-    <section class="controls" >
-      <label for="search">Search services</label>
-      <input id="search" type="search" placeholder="Search (e.g. 'sound', 'wedding', 'band')" />
+      <section class="controls">
+        <label for="search">Search services</label>
+        <input
+          id="search"
+          type="search"
+          placeholder="Search (e.g. 'sound', 'wedding', 'band')"
+        />
 
-      <label for="category">Category</label>
-      <select id="category">
-        <option value="">All categories</option>
-        <option value="planning">Event Planning</option>
-        <option value="sound">Sound Hire</option>
-        <option value="music">Live Music</option>
-      </select>
+        <label for="category">Category</label>
+        <select id="category">
+          <option value="">All categories</option>
+          <option value="planning">Event Planning</option>
+          <option value="sound">Sound Hire</option>
+          <option value="music">Live Music</option>
+        </select>
 
-      <label for="minBudget">Minimum budget (£)</label>
-      <input id="minBudget" type="number" min="0" step="50" placeholder="0" />
+        <label for="minBudget">Minimum budget (£)</label>
+        <input id="minBudget" type="number" min="0" step="50" placeholder="0" />
+      </section>
+
+      <section id="servicesList" class="services-grid"></section>
+    </main>
+
+    <section id="services" class="services">
+      <div class="service-cards">
+        <div class="images">
+          <img src="image13.jpg" alt="Event Planning" />
+          <h3>Wedding Planning</h3>
+        </div>
+        <div class="images">
+          <img src="image14.jpg" alt="Sound System Hire" />
+          <h3>Sound System Hire</h3>
+        </div>
+
+        <div class="images">
+          <img src="image15.jpg" alt="Live Music" />
+          <h3>Live Band/DJ</h3>
+        </div>
+        <div class="images">
+          <img src="image16.jpg" alt="Live Music" />
+          <h3>Corporate Event Planning</h3>
+        </div>
+
+        
+      </div>
     </section>
 
-    <section id="servicesList" class="services-grid" >
-    </section>
-  </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year2"></span> Soaltee Events</p>
+      </div>
+    </footer>
 
-  <footer class="site-footer"><div class="container"><p>&copy; <span id="year2"></span> Soaltee Events</p></div></footer>
-
-  <script src="services.js"></script>
-  <script src="index.js"></script>
-
-</body>
+    <script src="services.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
