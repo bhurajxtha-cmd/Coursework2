@@ -46,7 +46,10 @@ window.SOALTEE_SERVICES = [
   }
 ];
 
-// small controller to load/filter services
+
+
+
+
     (function(){
       const listEl = document.getElementById('servicesList');
       const search = document.getElementById('search');
@@ -85,7 +88,10 @@ window.SOALTEE_SERVICES = [
         render(results);
       }
 
-      // initial render
+
+
+
+      
       document.addEventListener('DOMContentLoaded', () => {
         render(window.SOALTEE_SERVICES);
         [search, category, minBudget].forEach(el => el.addEventListener('input', filter));
